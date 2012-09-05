@@ -1,0 +1,69 @@
+body {
+	font-family: Cabin, sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: Lora, serif;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+h1 {
+	margin: 0;
+},
+
+h3 {
+    font-size: 1.25em;
+}
+
+.throb {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: throb;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 4s;  
+}
+
+.spinY {
+    float: left;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: spinY;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: linear;  
+}
+
+@-webkit-keyframes throb {  
+    from {
+        margin-top: 0;
+        font-size: 1em;
+    }  
+  
+    to {  
+        margin-top: -0.5em;
+        font-size: 2em;
+    }  
+} 
+
+
+@-webkit-keyframes spinY {  
+ 0% {
+   -webkit-transform: scale(1.0) rotateY(0deg);
+ }
+ 33% {
+   -webkit-transform: scale(1.0) rotateY(120deg);
+ }
+ 67% {
+   -webkit-transform: scale(1.0) rotateY(240deg);
+ }
+ 100% {
+   -webkit-transform: scale(1.0) rotateY(360deg);
+ }
+} 
